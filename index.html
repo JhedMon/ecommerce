@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodFiesta: Savoring Culinary Delights with Every Click</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #FE9004;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h2 {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 80vh;
+        }
+
+        .section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px 0;
+        }
+
+        .section h1 {
+            position: relative;
+            display: inline-block;
+            margin: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .section h1::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: #333;
+            margin: 10px auto 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .grid-item {
+            background: #FE9004;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            width: 100%; /* Ensure all images take up the full width of the grid item */
+            height: 150px; /* Adjust the height as needed */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+
+        .grid-item p {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+  
+    <header>
+        <center>
+            <h2>FoodFiesta: Savoring Culinary Delights with Every Click</h2>
+        </center>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                 <li><a href="signup.html">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="section">
+            <center>
+                <h1>Our Best Sellers</h1>
+            </center>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="https://www.recipetineats.com/wp-content/uploads/2022/08/Stack-of-cheeseburgers.jpg?resize=150,150" alt="Cheese Burger">
+                    <p>Cheese Burger</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbpFejSEgQMf2DR2yXf8DQ9edUGpgH2epJA4tZ3bntiQ&s?resize=150,150" alt="Chicken Burger">
+                    <p>Chicken Burger</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCwgckUvhsJLYeBm7inq-C6eJHmUI-5rzssb5HX4Obhw&s?resize=150,150" alt="Bacon Burger">
+                    <p>Bacon Burger</p>
+                    </div>
+                    <div class="grid-item">
+                   <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/5/4/2/FNM_060111-Perfect-Patties-004_s4x3.jpg.rend.hgtvcom.616.462.suffix/1371597647270.jpeg" alt="Bacon Burger">
+                        <p>Pork Burger</p>
+                </div>
+                <div class="grid-item">
+                <img src="https://www.kitchensanctuary.com/wp-content/uploads/2021/05/Double-Cheeseburger-tall-FS-38.webp" alt="">
+                <p>Double Patty Burger</p>
+                
+                </div>
+                <div class="grid-item">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMsPxzErf-9iFKwkF1upRp_rqET1cp4zHBBfdBQeoyw&s" alt="">
+                  <p>Thick Patty Burger</p>
+                </div>
+             <main>
+               <section class="section">
+                 <center>
+                   <h1>Extras</h1>
+                 </center>
+                 <div class="grid">
+                   <div class="grid-item">
+                     <img src="https://www.cokesolutions.com/content/dam/cokesolutions/us/images/Products/Sprite-glass.jpg">
+                     <p>Sprite</p>
+                   </div>
+                   <div class="grid-item">
+                     <img src="https://mobileimages.lowes.com/productimages/ea506450-1201-4a6a-a0a6-383809b36f20/61163862.jpg">
+                     <p>Coca Cola</p>
+                   </div>
+                   <div class="grid-item">
+                     <img src="https://marilenminimart.com/cdn/shop/products/mdew295.edited_640x_808c1aa5-c1bf-430e-bda6-31d66fe92e4a.jpg?v=1624436776">
+                     <p>Mountain Dew</p>
+                   </div>
+                   <div class="grid-item">
+                     <img src="https://www.allrecipes.com/thmb/Hah7rcVgrA_vwFToFFWbTVKaVzQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/8460058-Animal-Style-Fries-ddmfs-4x3-0033-3d60a06638eb46059adb8ea694ddc411.jpg">
+                     <p>Animal Style Fries</p>
+                     </div>
+                     <div class="grid-item">
+                       <img src="https://cdn.britannica.com/34/206334-050-7637EB66/French-fries.jpg">
+                       <p>Regular Fries</p>
+                       </div>
+                       <div class="grid-item">
+                         <img src="https://www.thecookierookie.com/wp-content/uploads/2023/01/featured-cheese-fries-recipe.jpg">
+                         <p>Cheese Fries</p>
+                       </div>
+            
+            
+            
+            
+        </section>
+    </main>
+        <section class="section">
+          <center>
+            <h1>Other Burger Dishes</h1>
+          </center>
+          <div class="grid">
+            <div class="grid-item">
+              <img src="https://i0.wp.com/www.angsarap.net/wp-content/uploads/2014/05/Ultimate-Pinoy-Burger-Wide.jpg?ssl=1" alt="Pinoy Burger">
+              <p>Pinoy Burger</p>
+            </div>
+            <div class="grid-item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1dONeRvj4qXX0eI6jEEid8jvtXlfkzQJa8vGrbW7dp0IeV2nW6qly4Ld7EbtHUApZ5Ko&usqp=CAU" alt="Sisig Burger">
+              <p>Sisig Burger</p>
+            </div>
+            <div class="grid-item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc-JLa_9q08umkxN4mc9pxWsD2paF8quz1XskTqrT2HQ&s?resize=150,160" alt="Killer Burger">
+              <p>Killer Burger</p>
+            </div>
+                    <div class="grid-item">
+                      <img src="https://redhousespice.com/wp-content/uploads/2020/01/Chinese-pork-burger-foodgawker2.jpg" alt="Chinese Burger">
+                      <p>Chinese Burger</p>
+                    </div>
+      
+          <div class="grid-item">
+            <img src="https://i.pinimg.com/originals/79/52/fa/7952fafc412d35d8ac6fadb9d5e776aa.jpg" alt="Greasy Burger">
+            <p>Greasy Burger</p>
+          </div>
+          <div class="grid-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQVrO9FKarrAGq08vByBi6iEz-wLoEUi7c_g&s" alt="Greasy Burger">
+            <p>Veggie Burger</p>
+          </div>
+          
+
+
+        <script>
+          const gridItems = document.querySelectorAll('.grid-item');
+          gridItems.forEach(item => {
+            item.addEventListener('mouseenter', function() {
+              this.style.transform = 'translateY(-5px)';
+            });
+        
+            item.addEventListener('mouseleave', function() {
+              this.style.transform = 'translateY(0)';
+            });
+          });
+        </script>
+        </body>
+        
+        </html>
